@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>JmJl</title>
+    <title>Nombre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
   </head>
@@ -12,12 +12,14 @@
       <div class="wrapper">
         <div class="logo">Logo</div>
         <nav class="navegacion">
-          <a href="#" class="item">Inicio</a>
-          <a href="#sec1" class="item">Servicios</a>
-          <a href="#sec2" class="item">Nosotros</a>
-          <a class="modal-toggle">
-            <span class="item">Contactanos</span>
-          </a> 
+          <div class="menu" id="menu">
+            <a href="#" class="item">Inicio</a>
+            <a href="#sec1" class="item">Servicios</a>
+            <a href="#sec2" class="item">Nosotros</a>
+            <a class="modal-toggle">
+              <span class="item">Contactanos</span>
+            </a>
+          </div> 
         </nav>
       </div>
       <div class="banner">
@@ -162,13 +164,12 @@
     <!---------- MODAL ------------>
     <div class="modalContact" id="modal">
         <div class="contenidoModal" id="flex">
-            <a href="#" class="salir modal-toggle">
-              <img src="img/salir.png" alt="">
+            <a class="salir modal-toggle">
+              <img src="img/icons/cerrar.svg" alt="">
             </a> 
           <div class="tituloModal flex">
-            <img src="img/contacto.png" alt="">
-          </div>         
-          <h2>Contactanos por alguna de las siquientes plataformas</h2>
+            <h2>Contactanos por alguna de las siquientes plataformas</h2>
+          </div>
           <div class="modalIconos">
             <div class="messenger">
               <a href="https://messenger.com">
