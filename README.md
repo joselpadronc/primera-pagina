@@ -1,4 +1,4 @@
-#Pagina Practica
+#Pagina-Practica
 
 Este es un pequeño proyecto.
 
