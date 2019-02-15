@@ -1,4 +1,6 @@
-Este es un pequeño proyecto. 
+# Pagina-Practica
+
+Este es un pequeño proyecto.
 
 Esta hecho con HTML CSS y JS.
 
