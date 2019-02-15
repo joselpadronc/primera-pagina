@@ -1,0 +1,260 @@
+*{
+  margin:  0px;
+  padding: 0px;
+  font-family: arial;
+}
+html{
+  scroll-behavior: smooth;
+}
+hr{
+  border-radius: 100%
+}
+/*------ Header --------*/
+.wrapper{
+  background: #fbfbfbfa;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.logo{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+.menu{
+  color: #000;
+  cursor: pointer;
+}
+.navegacion{
+  text-align: right;
+  margin-top: -30px;
+  margin-right: 25px;
+  margin-bottom: 10px
+}
+.item{
+  padding-right: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #41aaa8;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.item:hover{
+  text-decoration: none;
+  color: rgb(7, 207, 207);
+}
+/*----- Banner ------*/
+.banner img{
+  display: flex;
+  width: 100%;
+  height: 528px;
+}
+.banner h2{
+  text-align: center;
+  margin-top: -300px;
+  font-size: 56px;
+  color: #fff;
+}
+/* _----Section 1------- */
+#sec1{
+  margin-top: 235px;
+  background: #eef2f5;
+  -webkit-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
+  box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
+}
+.titulo{
+  width: 100%;
+  background: #fff;
+}
+.titulo h1{
+  margin-top: 300px;
+  margin-bottom: -200px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  color: #6b6b6b;
+}
+/* -------SERVICIOS------ */
+
+.contenedor1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 40px;
+}
+.contenedor2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 40px;
+}
+.serv1, .serv2, .serv3, .serv4{
+  width: 40%;
+  background: rgb(238, 238, 238);
+  border-radius: 10px;
+  cursor: default;
+  transition: all .2s ease;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.serv1:hover, .serv2:hover, .serv3:hover, .serv4:hover{
+  border: solid 2px rgb(121, 240, 224);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.imges{
+  text-align: center;
+}
+.imges img{
+  margin: -195px 0;
+  width: 100%;
+  height: 209px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.name{
+  text-align: center;
+  margin: 200px 0 20px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+.parrafo{
+  display: flex;
+  align-content: center;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  width: 80%;
+}
+/*-----Section Nosotros------*/
+.nosotros{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/1.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+}
+.text-nosotros{
+  align-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, .6);
+  margin: 50px auto;
+  width: 60%;
+  height: 50%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.text-nosotros h1{
+  text-align:  center;
+  font-size: 50px;
+  margin: 20px 0 10px 0;
+}
+.text-nosotros p{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+.tecnologias h2{
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0 20px 0;
+}
+.carrusel{ 
+  width: 99.5%;
+  height: 65px;
+  margin-top: -15px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: solid 2px #37c9ee;
+  background: #30e3cbaf;
+}
+.tec1, .tec5, .tec4{
+  width: 40px;
+  height: 40px;
+  margin: 10px 30px 0 30px;
+}
+.tec2, .tec3{
+  width: 80px;
+  height: 40px;
+  margin: 10px 30px 0 30px;
+}
+/*------- Footer ------*/
+footer{
+  background: #3c4f65;
+}
+.btn-contactanos{
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  margin: auto;
+  background: #009f9d;
+  width: 20%;
+  border-radius: 5px;
+  border: solid 2px #fff;
+  cursor: pointer;
+  transition: all .5s ease;
+  -webkit-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
+  -moz-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
+  -ms-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
+  -o-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
+  box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
+}
+.btn-contactanos:hover{
+  border: solid 2px #3c4f65;
+  -webkit-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90); 
+  -moz-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
+  -ms-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
+  -o-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.90);
+}
+.btn-contactanos span{
+  padding: 15px 0 15px 0;
+  font-size: 25px;
+  color: #fff;
+}
+/*Sociales*/
+.sociales{
+  display: flex;
+  justify-content: flex-end;
+  margin: 60px 20px auto;
+}
+.sociales h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.sociales img{
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.mini-footer{
+  padding: 10px 0 10px 0;
+  background: #3c4f65;
+  -webkit-box-shadow: 0px 8px 28px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 8px 28px 0px rgba(255,255,255,1);
+  box-shadow: 0px 8px 28px 0px rgba(255,255,255,1);
+}
+.mini-footer h3{
+  text-align: center;
+  color: #009f9d;
+}
