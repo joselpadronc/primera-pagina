@@ -511,7 +511,7 @@ img {
 }
 
 /*----- Responsive Design -----*/
-@media(max-width: 780px){
+@media(max-width: 760px){
   /*------ Banner  ------*/
   .banner img{
     width: 100%;
