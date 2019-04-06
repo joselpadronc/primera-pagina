@@ -1,15 +1,14 @@
 *{
-  margin: 0;
-  left: 0;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  margin:  0px;
+  padding: 0px;
+  font-family: arial;
 }
-
-/*--------- Smooth Scroll -----------*/
 html{
   scroll-behavior: smooth;
 }
-
+hr{
+  border-radius: 100%;
+}
 /*------ Header --------*/
 .wrapper{
   background: #fbfbfbfa;
@@ -43,319 +42,172 @@ html{
   font-weight: 600;
   color: #41aaa8;
   cursor: pointer;
+  transition: all .5s ease;
+}
+.item:hover{
+  text-decoration: none;
+  color: rgb(7, 207, 207);
 }
 /*----- Banner ------*/
+
 .banner img{
-  margin-top: 0;
-  margin-left: -35px;
+  display: flex;
   width: 100%;
   height: 528px;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 100% 80%, 100% 80%, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 100% 80%, 100% 80%, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
 }
 .banner h2{
-  margin-top: -350px;
+  position: relative;
+  text-align: center;
+  margin-top: -300px;
   font-size: 56px;
   color: #fff;
-  text-align: center;
 }
-/*----- diagonal ------*/
-.diagonal{
-  margin-top: 222px;
+/* _----Section 1------- */
+#sec1{
+  margin-top: 235px;
+  background: #eef2f5;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,1);
+}
+.titulo{
   width: 100%;
-}
-/*-----Section Servicios----*/
-section{
-  padding-top: -100px;
   background: #fff;
 }
 .titulo h1{
-  margin-top: -45px;
-  padding-bottom: 60px;
-  font-size: 50px;
+  margin-top: 300px;
+  margin-bottom: -200px;
   text-align: center;
+  font-size: 60px;
+  font-weight: 900;
   color: #6b6b6b;
 }
-/*SERVICIOS 1*/
-.servicios1{
+/* -------SERVICIOS------ */
+.contenedor1{
+  display: flex;
+  padding: 25px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.serv1, .serv2, .serv3, .serv4{
+  width: calc(25 / 4);
+  max-width: 300px;
+  margin: 15px 75px;
+  background: rgb(238, 238, 238);
+  border-radius: 10px;
+  cursor: default;
+  transition: all .2s ease 0s;
+  
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.serv1:hover, .serv2:hover, .serv3:hover, .serv4:hover{
+  border: solid 2px rgb(121, 240, 224);
+  opacity: 1;
+  visibility: visible;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.imges{
+  text-align: center;
+}
+.imges img{
+  margin: -195px 0;
   width: 100%;
-  height: 350px;
-  padding-top: 15px;
-  background: #dfdfdf;
-  padding-bottom: 40px;
-  -webkit-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
+  height: 209px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.text1{
-  width: 500px;
-  text-align: right;
-  margin-top: -200px;
-  margin-left: 450px;
-  margin-bottom: 150px;
-}
-.text1 h3{
+.name{
   text-align: center;
+  margin: 200px 0 20px 0;
   font-size: 25px;
-  margin-bottom: 20px;
+  font-weight: 600;
 }
-.text1 p{
+.parrafo{
+  display: flex;
+  align-content: center;
+  margin: 20px auto 20px auto;
   text-align: center;
+  width: 80%;
 }
-.imagen1 img{
-  margin-top: 36px;
-  margin-left: 10px;
-  width: 250px;
-  height: 250px;
-}
-.icon1{
-  background: #f4f9f4;
-  width: 70px;
-  height: 66px;
-  border-radius: 5px;
-  margin-top: -35px; 
-  margin-left: 458px; 
-  -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  cursor: none;
-}
-.icon1 img{
-  margin-top: 3px;
-  margin-left: -30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 0px;
-  cursor: none;
-}
-/*SERVICIOS 2*/
-.servicios2{
-  width: 100%;
-  height: 350px;
-  padding-top: 5px;
-  background: #f4f9f4;
-  padding-bottom: 50px;
-  -webkit-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-}
-.text2{
-  width: 500px;
-  text-align: left;
-  margin-left: 20px;
-  margin-top: -200px;
-  margin-bottom: 150px;
-}
-.text2 h3{
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-.text2 p{
-  text-align: center;
-}
-.imagen2 img{
-  margin-top: 36px;
-  margin-left: 690px;
-  width: 250px;
-  height: 250px;
-}
-.icon2{
-  background: #dfdfdf;
-  width: 70px;
-  height: 66px;
-  border-radius: 5px;
-  margin-top: -22px; 
-  margin-left: 458px; 
-  -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  cursor: none;
-}
-.icon2 img{
-  margin-top: 3px;
-  margin-left: -30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 0px;
-  cursor: none;
-}
-/*SERVICIOS 3*/
-.servicios3{
-  width: 100%;
-  height: 350px;
-  padding-top: 5px;
-  background: #dfdfdf;
-  padding-bottom: 50px;
-  -webkit-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-}
-.text3{
-  width: 500px;
-  text-align: right;
-  margin-top: -200px;
-  margin-left: 450px;
-  margin-bottom: 150px;
-}
-.text3 h3{
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-.text3 p{
-  text-align: center;
-}
-.imagen3 img{    
-  margin-top: 36px;
-  margin-left: 10px;
-  width: 250px;
-  height: 250px;
-}
-.icon3{
-  background: #f4f9f4;
-  width: 70px;
-  height: 66px;
-  border-radius: 5px;
-  margin-top: -22px; 
-  margin-left: 458px; 
-  -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  cursor: none;
-}
-.icon3 img{
-  margin-top: 17px;
-  margin-left: -30px;
-  width: 60px;
-  height: 30px;
-  border-radius: 0px;
-  cursor: none;
-}
-/*SERVICIOS 4*/
-.servicios4{
-  width: 100%;
-  height: 350px;
-  padding-top: 5px;
-  background: #f4f9f4;
-  padding-bottom: 50px;
-  -webkit-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-  box-shadow: 0px 8px 22px 2px rgba(0,0,0,1);
-}
-.text4{
-  width: 500px;
-  text-align: left;
-  margin-left: 20px;
-  margin-top: -200px;
-  margin-bottom: 150px;
-}
-.text4 h3{
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-.text4 p{
-  text-align: center;
-}
-.imagen4 img{
-  margin-top: 36px;
-  margin-left: 690px;
-  width: 250px;
-  height: 250px;
-}
-.icon4{
-  background: #dfdfdf;
-  width: 70px;
-  height: 66px;
-  border-radius: 5px;
-  margin-top: -22px; 
-  margin-left: 458px; 
-  -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.6);
-  cursor: none;
-}
-.icon4 img{
-  margin-top: 3px;
-  margin-left: -30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 0px;
-  cursor: none;
-}
-
 /*-----Section Nosotros------*/
 .nosotros{
-  padding-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 600px;
   background-image: url(../img/1.jpg);
-  width:  100%;
   overflow: hidden;
   background-attachment: fixed;
   background-position: center;
-  padding-bottom: 60px;
 }
-.text{
+.text-nosotros{
+  align-content: center;
+  color: #fff;
   background: rgba(0, 0, 0, .6);
-  margin-left: 199px;
+  margin: 50px auto;
   width: 60%;
-  border-radius: 20px;
+  height: 50%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
-.text p{
+.text-nosotros h1{
+  text-align:  center;
+  font-size: 50px;
+  margin: 20px 0 10px 0;
+}
+.text-nosotros p{
+  width: 100%;
   text-align: center;
-  padding-bottom: 50px;
-  color: #fff;
-}
-.text h1{
-  text-align: center;
-  padding-top: 20px;
-  margin-top: 20px;
-  font-size: 40px;
-  margin-bottom: 40px;
-  color: #fff;
-}
-/*TECNOLOGIAS*/
-.tecnologias{
-  background: rgba(255, 255, 255, 0.8);
-  margin-left: 95px;
-  width: 80%;
-  border-radius: 10px;
-  padding-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 .tecnologias h2{
-  padding-top: 20px;
-  margin-top: 50px;
   text-align: center;
   font-size: 30px;
+  margin: 20px 0 20px 0;
 }
-.carrusel{
-  margin-top: 20px;
-  margin-left: -30px;
+.carrusel{ 
+  width: 99.5%;
+  height: 65px;
+  margin-top: -15px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: solid 2px #37c9ee;
+  background: #3c4f65cc;
 }
-img{
-  padding-left: 35px;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
+.tec1, .tec5, .tec4{
+  width: 40px;
+  height: 40px;
+  margin: 10px 30px 0 30px;
 }
-.tec2, .tec3 {
-  width: 150px;
-  height: 60px;
+.tec2, .tec3{
+  width: 80px;
+  height: 40px;
+  margin: 10px 30px 0 30px;
 }
 /*------- Footer ------*/
-footer{  
-  padding-top: 200px;
+footer{
   background: #3c4f65;
 }
 .btn-contactanos{
-  margin-left: 400px;
-  margin-top: -225px;
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  margin: auto;
   background: #009f9d;
   width: 20%;
-  padding: 15px 0 15px 0;
   border-radius: 5px;
-  text-align: center;
-  border-color: #fff;
-  border-width: 2px;
-  border-style: solid;
+  border: solid 2px #fff;
   cursor: pointer;
   transition: all .5s ease;
   -webkit-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
@@ -365,9 +217,7 @@ footer{
   box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
 }
 .btn-contactanos:hover{
-  border-color: #3c4f65;
-  border-width: 2px;
-  border-style: solid;
+  border: solid 2px #3c4f65;
   -webkit-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90); 
   -moz-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
   -ms-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
@@ -375,24 +225,27 @@ footer{
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.90);
 }
 .btn-contactanos span{
+  padding: 15px 0 15px 0;
   font-size: 25px;
   color: #fff;
 }
 /*Sociales*/
 .sociales{
-  margin-top: 55px; 
-  margin-left: 740px; 
+  display: flex;
+  justify-content: flex-end;
+  margin: 60px 20px auto;
 }
 .sociales h3{
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
   color: #fff;
   font-size: 20px;
 }
 .sociales img{
   width: 40px;
   height: 40px;
-  margin-left: 2px;
+  margin-left: 20px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -407,9 +260,9 @@ footer{
   text-align: center;
   color: #009f9d;
 }
-
-/*--------MODAL---------*/
+/*------ Ventana Modal ------*/
 .modalContact{
+  display: flex;
   display: none;
   position: fixed;
   z-index: 1;
@@ -427,7 +280,7 @@ footer{
   margin-top: 100px;
   margin-left: 190px;
   width: 60%;
-  height: 300px;
+  height: 260px;
   border-radius: 10px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
@@ -450,56 +303,51 @@ footer{
 }
 /*-------------*/
 .contenidoModal h2{
-  margin-top: -40px; 
-  margin-bottom: 50px;
+  margin-top: -80px; 
+  margin-bottom: 20px;
   font-size: 20px;
   text-align: center;
 }
 /*-------------*/
 .salir img{
-  margin-top: 0px;
-  margin-left: 550px;
-  width: 20px;
-  height: 20px;
+  align-content: left;
+  width: 25px;
+  height: 25px;
   border-radius: 100%;
+  cursor: pointer;
 }
 /*-------------*/
 .tituloModal h2{
   margin-top: 15px;
 }
 /*-------------*/
-.modalIconos {
-  margin-top: 0;
-  margin-left: 50px;
-  width: 500px;
-  height: 150px;
+.modalIcon {
   display: flex;
+  margin-top: 0;
+  width: 160px;
+  height: 160px;
   border-radius: 5px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
-img {
-  margin-top: 10px;
-  margin-left: 24px;
+.modalIcon img{
+  display: center;
+  flex-wrap: nowrap;
 }
 .messenger img{
-  margin-top: 20px;
   width: 80px;
   height: 80px;
 }
 .whatsapp img{
-  margin-top: 20px;
   width: 90px;
   height: 90px;
 }
 .gmail img{
-  margin-top: 20px;
   width: 90px;
   height: 90px;
 }
-
 .messenger h4{
   margin: 12px 0 0 54px;
 }
@@ -509,396 +357,175 @@ img {
 .gmail h4{
   margin: 4px 0 0 84px;
 }
-
-/*----- Responsive Design -----*/
-@media(max-width: 760px){
-  /*------ Banner  ------*/
-  .banner img{
-    width: 100%;
-    height: 500px;
+@media(max-width: 780px){
+  .titulo h1{
+    font-size: 50px;
+    margin-top: 260px;
+    margin-bottom: -200px;
   }
-  /*-----Navegacion----*/
-  .wrapper {
-    width: 780px;
+  .imges{
+    height: 0px;
   }
-  /*-----Diagonal------*/
-  .diagonal{
-    margin-top: 234px;
-    width: 100%;
+  .imges img{
+    height: 140px;
+    margin-bottom: -126px;
   }
-  /*------Servicios-------*/
-  .icon1, .icon2, .icon3, .icon4{
-    margin-left: 355px;
+  .name{
+    font-size: 18px;
+    margin: 145px 0 6px 0;
   }
-  .imagen1 img, .imagen3 img{
-    margin: 60px 0 20px -25px;
-    width: 182px;
-    height: 182px;
+  .text-nosotros{
+    width: 60%;
+    height: 40.5%;
   }
-  .text1, .text3{
-    margin: -160px 0 -50px 320px;
-    width: 450px;
+  .text-nosotros h1{
+    font-size: 25px;
+    margin: 5px 0 5px 0;
   }
-  .imagen2 img, .imagen4 img{
-    margin: 60px 0 20px 555px;
-    width: 182px;
-    height: 182px;
+  .text-nosotros p{
+    font-size: 15px;
   }
-  .text2, .text4{
-    margin: -160px 0 -50px 6px;
-    width: 450px;
+  .tecnologias h2{
+    font-size: 25px;
+    margin: 5px 0 5px 0;
   }
-  /*-----Carrusel-------*/
-  .text{
-    margin-left: 153px;
+  .carrusel{
+    margin-top: 0.5px;
+    height: 45px;
   }
-  .tecnologias{
-    margin-left: 78px;
+  .tec1, .tec5, .tec4{
+    width: 30px;
+    height: 30px;
+    margin: 10px  20px 0  20px;
   }
-  .carrusel {
-    margin-top: 20px;
-    margin-left: 8px;
+  .tec2, .tec3{
+    width: 70px;
+    height: 30px;
+    margin: 10px  20px 0  20px;
   }
-  .tec4, .tec5{
-    margin-left: 132px;
-  }
-  /*------Footer-------*/
-  footer{
-    width: 780px;
-  }
-  .btn-contactanos{
-    margin-left: 310px;
-  }
-  .sociales{
-    margin-left: 510px;
-  }
-  /*-----Modal------*/
-  .contenidoModal{
-    width: 76%;
-    margin-left: 100px;
-  }
-  .salir img{
-    margin-left: 535px;
-    margin-top: 2px;
+  .btn-contactanos span{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
   }
 }
-@media(max-width: 640px){
-  /*------ Banner  ------*/
-  .banner img{
-    width: 100%;
-    height: 490px;
+@media(max-width: 680px){
+  .imges img{
+    height: 120px;
+    margin-bottom: -106px;
   }
-  /*-----Navegacion----*/
-  .wrapper {
-    width: 640px;
+  .name{
+    font-size: 18px;
+    margin: 125px 0 6px 0;
   }
-  .navegacion a{
-    padding-left: 15px;
-    margin-right: -20px;
-    font-weight: 600;
-    font-size: 16px;
+  .nosotros{
+    height: 400px;
   }
-  .navegacion span{
-    padding-left: 2px;
-    margin-right: -15px;
-    font-weight: 600;
-    font-size: 16px;
+  .text-nosotros{
+    height: 55%;
   }
-  /*-----Diagonal------*/
-  .diagonal{
-    margin-top: 243px;
-    width: 100%;
+  .text-nosotros p{
+    font-size: 12.5px;
   }
-  /*------Servicios-------*/
-  .titulo h1{
+  .carrusel{
+    height: 40px;
+  }
+  .tec1, .tec5, .tec4{
+    width: 25px;
+    height: 25px;
+    margin: 10px  18px 0  18px;
+  }
+  .tec2, .tec3{
+    width: 60px;
+    height: 25px;
+    margin: 10px 18px 0 18px;
+  }
+  .sociales img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+  .sociales h3{
     margin-top: 0px;
   }
-  .icon1, .icon2, .icon3, .icon4{
-    margin-left: 276px;
-  }
-  .imagen1 img, .imagen3 img{
-    margin-top: 60px;
-    padding-bottom: 10px;
-    width: 180px;
-    height: 180px;
-  }
-  .text1, .text3{
-    margin-top: -200px;
-    margin-left: 318px;
-    margin-bottom: -40px;
-    width: 300px;
-  }
-  .imagen2 img, .imagen4 img{
-    margin-top: 60px;
-    margin-left: 420px;
-    padding-bottom: 10px;
-    width: 180px;
-    height: 180px;
-  }
-  .text2, .text4{
-    margin: -200px 0 -50px 6px;
-    width: 300px;
-  }
-  /*-----Carrusel-------*/
-  .text{
-    width: 70%;
-    margin-left: 96px;
-  }
-  .tecnologias{
-    width: 90%;
-    margin-left: 30px;
-  }
-  .carrusel {
-    margin-top: 20px;
-    margin-left: -25px;
-  }
-  .tec4, .tec5{
-    margin-left: 128px;
-  }
-  /*------Footer-------*/
-  footer{
-    width: 640px;
-  }
-  .btn-contactanos{
-    margin-left: 210px;
-    width:200px;
-  }
-  .sociales{
-    margin-left: 370px;
-  }
-  /*-----Modal------*/
-  .contenidoModal{
-    width: 70%;
-    margin-left: 90px;
-  }
-  .modalIconos{
-    width: 80%;
-    height: 100px;
-  }
-  .modalIconos img{
-    margin-left: -18px;
-  }
-  .messenger img{
-    width: 40px;
-    height: 40px;
-    margin-left: -2px;
-  }
-  .messenger h4 {
-    margin: 8px 0 0 18px;
-  }
-  .whatsapp img{
-    width: 55px;
-    height: 55px;
-    margin-top: 12px;
-    margin-left: 24px;
-  }
-  .whatsapp h4 {
-    margin: 2px 0 0 45px;
-  }
-  .gmail img{
-    width: 45px;
-    height: 45px;
-    margin-top: 20px;
-    margin-left: 32px;
-  }
-  .gmail h4 {
-    margin: 4px 0 0 66px;
-  }
-  .salir img{
-    margin-left: 390px;
-    margin-top: 2px;
-  }
 }
-@media(max-width: 320px){
-  /*------ Banner  ------*/
-  .banner img{
-    margin-top: 82px;
-    width: 320px;
-    height: 250px;
-  }
-  .banner h2{
-    margin-top: -180px;
-    margin-left: 0px;
-    font-size: 30px;
-  }
-  /*-----Navegacion----*/
-  .wrapper {
-    width: 320px;
-  }
+@media(max-width: 380px){
   .logo{
-    margin-left: 10px;
     text-align: center;
   }
-  .navegacion a {
-    font-size: 12px;
-  }
-  .navegacion span {
-    font-size: 12px;
-  }
   .navegacion{
-    margin-left: -100px;
-    margin-top: 8px;
+    margin-top: 2px;
+    text-align: center;
   }
-  /*-----Diagonal------*/
-  .diagonal{
-    display: none;
+  .item{
+    font-size: 15px;
+    font-weight: 600;
   }
-  /*------Servicios-------*/
-  .servicios1, .servicios2, .servicios3, .servicios4{
-    height: 420px;
+  .banner img{
+    padding-top: 90px;
+    height: 350px;
   }
-  #sec1{
-    width: 320px;
+  .banner h2{
+    margin-top: -200px;
+    font-size: 40px;
   }
   .titulo h1{
-    margin-left: 20px;
-    margin-top: 220px;
-    font-size: 30px;
+    font-size: 40px;
+    margin-top: 180px;
+    margin-bottom: -220px;
   }
-  .icon1, .icon2, .icon3, .icon4{
-    margin-left: 145px;
-    width: 45px;
-    height: 45px;
+  .serv1, .serv2, .serv3, .serv4{
+    width: 40%;
   }
-  .icon1 img, .icon2 img, .icon4 img{
-    width: 36px;
-    height: 38px;
+  .imges img{
+    height: 90px;
+    margin-bottom: -77px;
   }
-  .icon3 img{
-    margin-top: 12px;
-    margin-left: -32px;
-    width: 38px;
-    height: 24px;
-  }
-  .imagen1 img, .imagen3 img{
-    margin-top: 35px;
-    margin-left: 50px;
-    margin-bottom: 78px;
-    width: 160px;
-    height: 160px;
-  }
-  .text1, .text3{
-    margin-top: -52px;
-    margin-left: 10px;
-    margin-bottom: 45px;
-    width: 300px;
-  }
-  .imagen2 img, .imagen4 img{
-    margin-top: 35px;
-    margin-left: 38px;
-    margin-bottom: 78px;
-    width: 180px;
-    height: 180px;
-  }
-  .text2, .text4{
-    margin-top: -52px;
-    margin-left: 6px;
-    width: 300px;
-  }
-
-  /*-----Carrusel-------*/
-  #sec2{
-    width: 320px;
-  }
-  .text{
-    width: 95%;
-    height: 240px;
-    margin-left: 8px;
-  }
-  .text h1{
-    font-size: 30px;
-  }
-  .text p{
-    width: 300px;
+  .name{
     font-size: 12px;
+    margin: 92px 0 6px 0;
   }
-  .tecnologias{
-    width: 90%;
-    height: 280px;
-    margin-left: 16px;
+  .parrafo p{
+    font-size: 10px;
+  }
+  .nosotros{
+    height: 400px;
+  }
+  .text-nosotros{
+    width: 85%;
+    height: 61%;
   }
   .tecnologias h2{
     font-size: 20px;
   }
-  .tec1, .tec2 {
-    margin-top: 5px;
-    margin-left: 8px;
+  .tec1, .tec5, .tec4{
+    width: 18px;
+    height: 18px;
+    margin: 10px  14px 0  14px;
   }
-  .tec3{
-    width: 100px;
-    height: 50px;
-    margin-left: 85px;
-  }
-  .tec4, .tec5{
-    margin-left: 40px;
-  }
-  /*------Footer-------*/
-  footer{
-    width: 320px;
-  }
-  .btn-contactanos{
-    margin-left: 110px;
-    width: 100px;
-    height: 15px;
-  }
-  .btn-contactanos span{
-    font-size: 15px;
-  } 
-  .sociales{
-    margin-left: 100px;
+  .tec2, .tec3{
+    width: 50px;
+    height: 20px;
+    margin: 10px 14px 0 14px;
   }
   .sociales img{
-    margin-left: 10px;
     width: 20px;
     height: 20px;
+    
   }
   .sociales h3{
-    margin-left: 30px;
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  /*-----Modal------*/
-  .contenidoModal{
-    width: 85%;
-    height: 350px;
-    margin-left: 24px;
-  }
-  .tituloModal h2 {
-    margin-top: 6px;
-  }
-  .modalIconos{
-    width: 90%;
-    height: 200px;
-    margin-left: 14px;
-  }
-  .messenger img{
-    width: 40px;
-    height: 40px;
-    margin-left: -2px;
-  }
-  .messenger h4 {
-    margin: 8px 0 0 18px;
-  }
-  .whatsapp img{
-    width: 55px;
-    height: 55px;
-    margin-top: 12px;
-    margin-left: 24px;
-  }
-  .whatsapp h4 {
-    margin: 2px 0 0 45px;
-  }
-  .gmail img{
-    width: 45px;
-    height: 45px;
-    margin-top: 110px;
-    margin-left: -158px;
-  }
-  .gmail h4 {
-    margin: 6px 0 0 -124px;
-  }
-  .salir img{
-    margin-left: 215px;
     margin-top: 2px;
+    margin-right: -10px;
+    font-size: 16px;
+  }
+  .btn-contactanos{
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  margin: auto;
+  background: #009f9d;
+  width: 35%;
+  }
+  .btn-contactanos span{
+    font-size: 18px;
   }
 }
