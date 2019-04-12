@@ -87,7 +87,7 @@ hr{
   color: #6b6b6b;
 }
 /* -------SERVICIOS------ */
-.contenedor1{
+.contenedor{
   display: flex;
   padding: 25px 0;
   flex-wrap: wrap;
@@ -279,10 +279,13 @@ footer{
 }
 /*-------------*/
 .contenidoModal{
-  margin-top: 100px;
-  margin-left: 190px;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+
+  margin-top: 50px;
   width: 60%;
-  height: 260px;
+  height: 55%;
   border-radius: 10px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
@@ -305,14 +308,14 @@ footer{
 }
 /*-------------*/
 .contenidoModal h2{
-  margin-top: -80px; 
+  /* margin-top: -80px;  */
   margin-bottom: 20px;
   font-size: 20px;
   text-align: center;
 }
 /*-------------*/
 .salir img{
-  align-content: left;
+  /* align-content: left; */
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -324,40 +327,30 @@ footer{
 }
 /*-------------*/
 .modalIcon {
-  display: flex;
-  margin-top: 0;
-  width: 160px;
-  height: 160px;
+  align-content: center;
+  margin: 0 10px 0 10px;
+  width: 100px;
+  height: 100px;
   border-radius: 5px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
-.modalIcon img{
-  display: center;
-  flex-wrap: nowrap;
-}
 .messenger img{
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .whatsapp img{
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
 }
 .gmail img{
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
 }
-.messenger h4{
-  margin: 12px 0 0 54px;
-}
-.whatsapp h4{
-  margin: 4px 0 0 64px;
-}
-.gmail h4{
-  margin: 4px 0 0 84px;
+.modalIcon h4{
+  text-align: center;
 }
 @media(max-width: 780px){
   .titulo h1{
@@ -457,6 +450,9 @@ footer{
   .navegacion{
     margin-top: 2px;
     text-align: center;
+  }
+  .menu{
+    justify-content: space-between;
   }
   .item{
     font-size: 15px;
