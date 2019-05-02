@@ -300,7 +300,6 @@ footer {
 
 .modal {
     display: none;
-    /* display: flex; */
     position: fixed;
     z-index: 1;
     overflow: auto;
@@ -351,11 +350,12 @@ footer {
 
 .modalHeader {
     padding: 8px 16px;
-    background: skyblue;
+    background: #3c4f65;
     color: #fff;
 }
 
 .modalHeader h2 {
+		color: #fff;
     font-size: 30px;
 }
 
@@ -379,6 +379,15 @@ footer {
     padding: 15px 30px 15px 30px;
 }
 
+.formaContacto a{
+	color: #41aaa8;
+	transition: all .5s ease;
+}
+
+.formaContacto a:hover{
+	color: rgb(7, 207, 207);
+	text-decoration: none;
+}
 
 /*------ Responive Design ------*/
 
