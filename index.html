@@ -20,7 +20,7 @@
           <a href="#sec1" class="item">Servicios</a>
           <a href="#sec2" class="item">Nosotros</a>
           <a class="modal-toggle">
-            <span class="item">Contactanos</span>
+            <span id="abrir" class="item">Contactanos</span>
           </a>
         </div>
       </nav>
@@ -30,10 +30,6 @@
       <h2>Bienvenido</h2>
       <a href="#"></a>
     </div>
-    <!-- para el diagonal del la imagen fondo -->
-    <!-- <svg class="diagonal" viewBox="0 0 100 10" preserveAspectRatio="none" fill="#fff" data-reactid="28">
-        <polygon points="100 0 100 6 0 6" data-reactid="29"></polygon>
-      </svg> -->
   </header>
   <main>
     <!-----SECTION SERVICIOS ------>
@@ -143,7 +139,7 @@
       <section>
         <!-----FOOTER ------>
         <footer>
-          <div class="modal-toggle btn-contactanos abrir">
+          <div id="abrir" class="btn-contactanos">
             <span>Contactanos</span>
           </div>
           <div class="sociales">
@@ -159,11 +155,39 @@
       </section>
   </main>
   <!---------- MODAL ------------>
-  <div class="modalContact" id="modal">
-    <div class="contenidoModal">
+  <div id="modalContact" class="modal">
+    <div id="flex" class="flex">
+      <div class="contenidoModal">
+        <div class="modalHeader flex">
+          <h2>Contactanos a traves de:</h2>
+          <span class="cerrar" id="cerrar">&times;</span>
+        </div>
+        <div class="modalBody">
+          <div class="formasContenedor">
+            <div class="formaContacto">
+              <img src="img/icons/message.svg" alt="">
+              <h3>
+                <a href="#">Messenger</a>
+              </h3>
+            </div>
+            <div class="formaContacto">
+              <img src="img/icons/email.svg" alt="">
+              <h3>
+                <a href="#">Email</a>
+              </h3>
+            </div>
+            <div class="formaContacto">
+              <img src="img/icons/message.svg" alt="">
+              <h3>
+                <a href="#">WhatsApp</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <script src="js/main-app.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
