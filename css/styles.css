@@ -200,36 +200,7 @@ hr{
 /*------- Footer ------*/
 footer{
   background: #3c4f65;
-}
-.btn-contactanos{
-  display: flex;
-  justify-content: center;
-  justify-items: flex-start;
-  margin: auto;
-  background: #009f9d;
-  width: 20%;
-  border-radius: 5px;
-  border: solid 2px #fff;
-  cursor: pointer;
-  transition: all .5s ease;
-  -webkit-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
-  -moz-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
-  -ms-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
-  -o-box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
-  box-shadow: 0 1px 3px rgba(255, 0, 255, 0.12);
-}
-.btn-contactanos:hover{
-  border: solid 2px #3c4f65;
-  -webkit-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90); 
-  -moz-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
-  -ms-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
-  -o-box-shadow: 0  2px 4px 0 rgba(255, 255, 255, 0.90);
-  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.90);
-}
-.btn-contactanos span{
-  padding: 15px 0 15px 0;
-  font-size: 25px;
-  color: #fff;
+ padding: 50px 0 0 0;
 }
 /*Sociales*/
 .sociales{
